@@ -2,6 +2,8 @@
 
 Create your own personalized holodeck
 
+![Replicate Holodeck](./public/cover.jpg)
+
 ## Setup
 
 Add your [Replicate Token](https://replicate.com/account/api-tokens) to `.env`:
