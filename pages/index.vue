@@ -4,20 +4,25 @@ section
     u-input(
       v-model="prompt"
       @keydown.enter="loadNewImage"
-      :loading="loading"
       :disabled="loading"
       class="md:block md:min-w-96"
-      icon="i-heroicons-chat-bubble-bottom-center-text"
       size="xl"
-      placeholder="Write a new prompt and hit [ENTER]"
-      trailing
+      placeholder="Write a new prompt"
     )
+    u-button(
+      @click="loadNewImage"
+      :loading="loading"
+      :disabled="loading"
+      size="lg"
+      variant="solid"
+    ) {{ loading ? 'Loading...' : 'Submit' }}
     u-button(
       to="https://github.com/pwntus/replicate-holodeck"
       target="_blank"
       size="lg"
       icon="i-heroicons-code-bracket"
-      variant="solid"
+      variant="link"
+      color="black"
     ) Get the Code
   #panorama-container(
     @mousemove="onMouseMove"
