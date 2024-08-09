@@ -1,6 +1,6 @@
 <template lang="pug">
 section
-  #input
+  #input.gap-4.flex.flex-row
     u-input(
       v-model="prompt"
       @keydown.enter="loadNewImage"
@@ -12,6 +12,13 @@ section
       placeholder="Write a new prompt and hit [ENTER]"
       trailing
     )
+    u-button(
+      to="https://github.com/pwntus/replicate-holodeck"
+      target="_blank"
+      size="lg"
+      icon="i-heroicons-code-bracket"
+      variant="solid"
+    ) Get the Code
   #panorama-container(
     @mousemove="onMouseMove"
     @mouseleave="onMouseLeave"

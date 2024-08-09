@@ -7516,9 +7516,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"replicate-360-image-viewer@workspace:.":
+"replicate-holodeck@workspace:.":
   version: 0.0.0-use.local
-  resolution: "replicate-360-image-viewer@workspace:."
+  resolution: "replicate-holodeck@workspace:."
   dependencies:
     "@nuxt/ui": ^2.18.3
     "@vueuse/core": ^10.11.0
