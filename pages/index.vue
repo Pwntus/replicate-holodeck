@@ -155,17 +155,16 @@ export default {
 
       try {
         const prediction_image = await this.createPrediction(
-          'bfd2e4035cea655e508dd0c4a07addd1976e3223771d1a318a8dc698ccc2f3a0',
+          '76acc4075d0633dcb3823c1fed0419de21d42001b65c816c7b5b9beff30ec8cd',
           {
-            prompt: this.prompt,
-            output_format: 'webp'
+            prompt: this.prompt
           }
         )
 
         const prediction_upscaled = await this.createPrediction(
           'dfad41707589d68ecdccd1dfa600d55a208f9310748e44bfe35b4a6291453d5e',
           {
-            image: prediction_image.output[0],
+            image: prediction_image.output,
             output_format: 'webp'
           }
         )
